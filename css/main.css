@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto Mono", monospace;
+	width: 100vw;
+	height: 100vh;
+}
+.body-home_background {
+	background-image: url("https://i.postimg.cc/9F1bpjCk/Cover.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+header {
+	width: 100%;
+	height: 140px;
+	display: grid;
+	grid-template-rows:
+		1fr
+		2fr;
+}
+
+header .redes {
+	width: 100%;
+	background-color: #48cfad;
+	display: grid;
+	justify-items: end;
+	align-items: center;
+}
+
+header .redes-container {
+	padding-right: 50px;
+}
+
+header .redes-container .redes__item span {
+	color: white;
+}
+
+nav {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: end;
+}
+nav .logo {
+	height: 100%;
+}
+nav .logo a {
+	display: inline-block;
+	margin-left: 20px;
+	height: 100%;
+}
+nav .logo img {
+	height: 100%;
+	width: 100%;
+	max-width: 220px;
+	object-fit: contain;
+}
+
+nav .about-me {
+	display: grid;
+	width: 100%;
+	height: 100%;
+}
+
+nav .about-me a {
+	justify-self: end;
+	align-self: end;
+	margin-bottom: 30px;
+	margin-right: 40px;
+	color: white;
+	border-bottom: solid 1px white;
+}
+nav .about-me .about-me__link_black {
+	color: black;
+	border-bottom: solid 1px black;
+}
+
+main {
+	width: 100%;
+	min-height: calc(100% - 140px);
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	place-content: center;
+}
+
+.home-main .home-main__title {
+	grid-column: 2;
+	font-family: "Roboto Mono", monospace;
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 10px;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.home-main .home-main__link {
+	display: inline-block;
+	width: 115px;
+	height: 50px;
+	margin: 0 auto;
+	grid-column: 2;
+	font-weight: 700;
+	padding: 15px 10px 0;
+	background-color: #48cfad;
+	border: solid 1px black;
+}
+.blogs-main {
+	display: flex;
+	flex-direction: column;
+}
+.blogs-main .blogs-noticias {
+	margin-top: 30px;
+	padding: 0 50px 40px;
+	display: grid;
+	background-color: #e6e9ed;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 2fr;
+}
+.blogs-main .blogs-noticias .blogs-noticias__title {
+	margin: 10px 0 10px 0;
+	font-size: 16px;
+	font-weight: 700;
+}
+.blogs-main .blogs-noticias-img {
+	width: auto;
+	grid-area: 2 / 1;
+}
+
+.blogs-main .blogs-noticias .blogs-noticias-img img {
+	width: 95%;
+	height: 100%;
+	object-fit: cover;
+}
+.blogs-main .blogs-noticias-leer {
+	padding-left: 15px;
+	grid-area: 2 / 2;
+}
+
+.blogs-main .blogs-noticias-leer h1 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 35px;
+	font-weight: 700;
+}
+
+.blogs-main .blogs-noticias-leer p {
+	margin-bottom: 20px;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.blogs-main .blogs-noticias-leer a {
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	padding: 8px 0 8px 0;
+	text-align: center;
+
+	font-size: 10px;
+	border: solid 1px #63d3b8;
+}
+
+.blogs-main .blogposts {
+	margin: 50px 40px;
+}
+
+.blogs-main .blogposts .blogposts__title {
+	margin-bottom: 20px;
+
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.blogs-main .blogposts hr {
+	border: solid 1px #ccd1d9;
+}
+
+.blogs-main .blogposts .article-container {
+	margin-top: 35px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 2fr);
+	column-gap: 40px;
+	row-gap: 50px;
+}
+
+.blog img {
+	width: 100%;
+}
+
+.blog h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.blog p {
+	margin-bottom: 10px;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.blog a {
+	display: inline-block;
+	width: 85px;
+	height: 35px;
+	padding: 10px 0 8px 0;
+	text-align: center;
+
+	font-size: 10px;
+	border: solid 1px #63d3b8;
+}
+
+.blogs-footer {
+	display: grid;
+	place-content: center;
+	height: 70px;
+	background-color: #23282d;
+	border-top: solid 25px #48cfad;
+}
+
+.blogs-footer p {
+	font-size: 12px;
+	font-weight: 400;
+	color: white;
+}
+
+.blog-main {
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.blog-main picture {
+	height: 350px;
+	margin: 0 50px 40px 50px;
+}
+.blog-main img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.blog-main .blog {
+	max-width: 560px;
+	margin: 0 auto;
+}
+
+.blog-main .blog .blog__tag {
+	margin-bottom: 5px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.blog-main .blog hr {
+	height: 1px;
+	color: #d3d7df;
+}
+
+.blog-main .blog h1 {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	font-size: 36px;
+}
+
+.blog-main .blog p {
+	margin-bottom: 25px;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.blog-footer .contacto {
+	height: 200px;
+	padding: 0 80px 0 80px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	background-color: #e6e9ed;
+}
+.blog-footer .contacto .contacto-item {
+	display: flex;
+	align-items: flex-end;
+}
+.blog-footer .contacto .contacto-item img {
+	width: 100px;
+	height: 100px;
+}
+
+.blog-footer .contacto .contacto-texto {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.blog-footer .contacto .contacto-item a {
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: underline;
+	letter-spacing: 1px;
+}
+
+.blog-footer .contacto .contacto-item p {
+	margin-top: 10px;
+	font-size: 12px;
+	font-weight: 400;
+}
+.perfil-main {
+	display: inline-block;
+}
+.perfil-main .about {
+	height: 250px;
+	margin-top: 20px;
+	padding: 0 50px 0 50px;
+	display: grid;
+	grid-template-columns: 2fr 4fr;
+	align-items: center;
+	background-color: #e6e9ed;
+}
+
+.perfil-main .about img {
+	width: 90%;
+	object-fit: cover;
+}
+
+.perfil-main .about-right h1 {
+	margin-bottom: 15px;
+	font-size: 35px;
+}
+
+.perfil-main .about-right p {
+	font-size: 16px;
+}
+
+.perfil-main .proyects {
+	margin-top: 50px;
+	padding: 0 50px 70px 30px;
+}
+
+.perfil-main .proyects h2 {
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.perfil-main .proyects hr {
+	border: none;
+	border: solid 1px #d5d9df;
+}
+
+.perfil-main .proyects .proyects-container {
+	margin-top: 30px;
+	display: grid;
+	gap: 30px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.perfil-main .proyects .proyects-item h3 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.perfil-main .proyects .proyects-item p {
+	font-size: 12px;
+	margin-bottom: 15px;
+}
